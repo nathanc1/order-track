@@ -56,7 +56,7 @@ app.get("/order-tracking", async (req, res) => {
       first: 50
     };
 
-    const graphQLResponse = await fetch(`${SHOPIFY_STORE_URL}/admin/api/2023-10/graphql.json`, {
+    const graphQLResponse = await fetch(`${SHOPIFY_STORE_URL}/admin/api/2024-01/graphql.json`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
