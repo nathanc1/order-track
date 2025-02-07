@@ -1,10 +1,17 @@
 import express from "express";
 import fetch from "node-fetch";
 import dotenv from "dotenv";
+import cors from "cors"; 
+
 
 dotenv.config();
 
 const app = express();
+
+// Allow cross-origin requests from anywhere, for when we change domain
+
+app.use(cors());
+
 
 const SHOPIFY_STORE_URL = process.env.SHOPIFY_STORE_URL;
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN;
